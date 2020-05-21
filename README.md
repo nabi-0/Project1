@@ -2,9 +2,9 @@
 
 ## Description
 
-We will develope a website that will let a user enter a 
+We will develop a website that will let a user enter a 
 famous basketball or soccer player and our web page will give you 
-information about them with a video of top 10 plays on youtube.
+information about them with a video of top 10 plays on YouTube.
 
 ## Developers
 

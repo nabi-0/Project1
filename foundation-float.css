@@ -16,7 +16,44 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%; }
 
+  .dropbtn {
+    background-color: blue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 250px;
+  }
   
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 90px;
+  
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: lightblue;}
+
   header {
     background-color: lightgray;
     text-align: center;  
@@ -34,29 +71,41 @@ html {
   }
 
   .container {
-    border: solid black 2px;
-    height: 400px;
-    margin-top: 50px;
-  }
-  .container-video {
-  border: solid red 2px;
    
-    margin-top: 10px;
-    height: 600px;
+    height: 400px;
+    float: right;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 80px;
   }
 
+.card {
+  height: 400px;
+  width: 400px;
+  border: solid red;
+  text-align: center;
+  padding: 10px;
+  margin-left: 90px;
+  margin-top: 80px;
+  
+}
   #input {
     width: 170px;
   }
   
   #searchBar {
-  width: 400px;
+  width: 300px;
   display: block;
+  
   }
 
   #search-section,
   #button-section {
     float: right;
+   
   }
 
 

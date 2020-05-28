@@ -16,15 +16,14 @@ function getBasketballInfo() {
   });
 }
 
-function getSoccerInfo() {
-
+function getBaseballInfo() {
   var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "https://api-football-v1.p.rapidapi.com/v2/players/player/567",
+    "url": "https://mlb-data.p.rapidapi.com/json/named.player_info.bam?sport_code='mlb'&player_id='493316'",
     "method": "GET",
     "headers": {
-      "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
+      "x-rapidapi-host": "mlb-data.p.rapidapi.com",
       "x-rapidapi-key": "75707fa799msha4a06e78acf5fdcp1f1ec2jsn683a106045e2"
     }
   }
@@ -32,8 +31,7 @@ function getSoccerInfo() {
   $.ajax(settings).done(function (response) {
     console.log(response);
   });
-
 }
 
 getBasketballInfo();
-getSoccerInfo();
+getBaseballInfo();

@@ -16,6 +16,23 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%; }
 
+  #basketLink {
+    margin-top: 30px;
+  }
+  #baseLink {
+    margin-top: 150px;
+  }
+
+  a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    width: 180px;
+    text-decoration: none;
+    color: initial;
+    background-color: royalblue;
+}
+
   .dropbtn {
     background-color: blue;
     color: white;
@@ -28,7 +45,8 @@ html {
   .dropdown {
     position: relative;
     display: inline-block;
-    margin-left: 90px;
+    margin-left: 250px;
+    
   
   }
   
@@ -78,7 +96,7 @@ html {
     background-color: white;
     text-align: center;
     padding: 10px;
-    margin-left: 100px;
+    margin-right: 200px;
     margin-top: 80px;
   }
 
@@ -88,7 +106,7 @@ html {
   border: solid red;
   text-align: center;
   padding: 10px;
-  margin-left: 90px;
+  margin-left: 200px;
   margin-top: 80px;
   
 }
@@ -99,12 +117,13 @@ html {
   #searchBar {
   width: 300px;
   display: block;
-  
+  border: solid royalblue;
   }
 
   #search-section,
   #button-section {
-    float: right;
+  float: left;
+    
    
   }
 
@@ -607,7 +626,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: normal;
   color: inherit;

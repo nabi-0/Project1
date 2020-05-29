@@ -1,6 +1,6 @@
 //var q = "";
 // for testing
-var q = "James";
+var q = "";
 //var isActive = "";
 //for testing
 var isActive = "Y"
@@ -10,7 +10,7 @@ var sport = "";
  
 // on click of dropdown (or options?) get selected option
 $("#sportDropdown li").on("click", function() {
-   var sport = $(this).text();
+   sport = $(this).text();
    console.log(sport);
  
    if (sport == "MLB Baseball - Inactive") {
@@ -22,19 +22,14 @@ $("#sportDropdown li").on("click", function() {
    }
  
    // close on click?
-   $('.dropdown-content').foundation('close');
-})
- 
-// on click of isActive dropdown, get selection option (Y/N)
-$("isActiveBtn").on("click", function() {
-   var isActive = this.text;
-   console.log(isActive);
+   //$('.dropdown-content').foundation('close');
 })
  
 // on click of search button, get search and based on sport selection, run api
 $("#searchBtn").on("click", function() {
-   console.log("test");
-   q = document.getElementById("searchBar").value;
+	// if sport empty, prompt alert
+   console.log(sport);
+   var q = document.getElementById("searchBar").value;
    //console.log(q);
    //isActive = document.getElementById("isActive").value;
  
@@ -42,11 +37,11 @@ $("#searchBtn").on("click", function() {
    if (sport == "NBA Basketball") {
        console.log("basketball");
        getBasketballInfo(q);
-   }
+   };
    if (sport == "MLB Baseball") {
        console.log("baseball");
        getBaseballInfo(q, isActive);
-   }
+   };
 });
  
 // basketball player search
@@ -76,12 +71,11 @@ function getBaseballInfo(q, isActive) {
    }
    $.ajax(settings).done(function(response) {
        console.log(response);
-    
+       
    });
 };
  
 //function getSeason() {};
  
 //getBasketballInfo(q);
-getBaseballInfo(q, isActive);
- 
+//getBaseballInfo(q, isActive);

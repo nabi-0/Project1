@@ -22,7 +22,9 @@ html {
   #baseLink {
     margin-top: 150px;
   }
-
+#info {
+  margin-left: 50px;
+}
   a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -33,45 +35,66 @@ html {
     background-color: royalblue;
 }
 
-  .dropbtn {
-    background-color: blue;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    width: 250px;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    margin-left: 250px;
-    
-  
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 250px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: lightblue;}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
 
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-left: 100px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
   header {
     background-color: lightgray;
     text-align: center;  
@@ -85,6 +108,8 @@ html {
   footer{
     background-color: lightgray;
     text-align: center;
+    border: solid white 40px;
+    margin-top: 40px;
     
   }
 
@@ -122,7 +147,8 @@ html {
 
   #search-section,
   #button-section {
-  float: left;
+  float: right;
+  margin-top: 5px;
     
    
   }

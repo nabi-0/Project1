@@ -4,34 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Project 1</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="foundation-float.css" />
   </head>
-  <body>
 
-<script src="./project-1.js"></script>
+  <body>
 <header>
   NBA   /   MLB
 </header>
-<div class="head">
+<div class="navbar">
+  <a href="#contact" id="info"><i class="fa fa-fw fa-envelope"></i> Contact Us</a> 
   <div class="dropdown">
-    <button class="dropbtn">Sport selector</button>
+    <button class="dropbtn">Select A Sport 
+      <i class="fa fa-caret-down"></i>
+    </button>
     <div class="dropdown-content">
-      <a href="#">NBA Basketball</a>
-      <a href="#">MLB Baseball</a>
-      
-    </div>
-  </div>
-    <section id="search-section">
+      <a href="#">NBA</a>
+      <a href="#">MLB current players</a>
+      <a href="#">MLB retired players</a>
+    </div>   
+  </div> 
+  <section id="search-section">
     <div id="search">    
   <input type="text" id="searchBar" placeholder="Enter player name">
   </section>
   <section id="button-section">
-  <button id="searchBtn" class="button" >Search</button>
+  <button id="searchBtn" class="button" ><i class="fa fa-fw fa-search"></i>Search</button>
   </section>
     </div>
 </div>
+</div>
+   
 
 <div class="container">
 
@@ -59,10 +64,17 @@
 
 
 <footer>
+  <div class="contact" id="contact">
   <h5>Designed by: Natalia Arias, Journey Cruz, Joseph Arocha</h5>
   <br>
-  05/2020
+ <p>05/2020</p> 
+  <br>
+  <p>Contact Us</p>
+  <p>Email :</p>
+  <p>Social Media:</p>
+</div>
 </footer>
 
+<script src="./project-1.js"></script>
   </body>
   </html>

@@ -1,6 +1,6 @@
 //var q = "";
 // for testing
-var q = "";
+var q = "James";
 //var isActive = "";
 //for testing
 var isActive = "Y"
@@ -34,14 +34,16 @@ $("#searchBtn").on("click", function() {
    //isActive = document.getElementById("isActive").value;
  
    // check sport selection
-   if (sport == "NBA Basketball") {
+   if (sport == "NBA") {
        console.log("basketball");
        getBasketballInfo(q);
-   };
-   if (sport == "MLB Baseball") {
+   } else if (sport == "MLB Baseball") {
        console.log("baseball");
        getBaseballInfo(q, isActive);
-   };
+   } else {
+       alert("Please select a sport.");
+   }
+ 
 });
  
 // basketball player search
@@ -71,7 +73,6 @@ function getBaseballInfo(q, isActive) {
    }
    $.ajax(settings).done(function(response) {
        console.log(response);
-       
    });
 };
  
@@ -79,3 +80,5 @@ function getBaseballInfo(q, isActive) {
  
 //getBasketballInfo(q);
 //getBaseballInfo(q, isActive);
+ 
+ 

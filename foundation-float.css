@@ -118,7 +118,7 @@ html {
     height: 400px;
     float: right;
     width: 400px;
-    background-color: white;
+    background-color: whitesmoke;
     text-align: center;
     padding: 10px;
     margin-right: 200px;
@@ -688,7 +688,10 @@ h4, .h4 {
   font-size: 1.125rem;
   line-height: 1.4;
   margin-top: 0;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem; 
+color: black;
+font-weight: bolder;
+}
 
 h5, .h5 {
   font-size: 1.0625rem;
@@ -2541,7 +2544,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   margin-bottom: 1rem;
   border: 1px solid #e6e6e6;
   border-radius: 0;
-  background: #fefefe;
+ background-color: whitesmoke;
   -webkit-box-shadow: none;
           box-shadow: none;
   overflow: hidden;

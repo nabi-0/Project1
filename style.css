@@ -1,0 +1,163 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%; }
+  
+    #basketLink {
+      margin-top: 30px;
+    }
+    #baseLink {
+      margin-top: 150px;
+    }
+  #info {
+    margin-left: 50px;
+  }
+    a.button {
+      -webkit-appearance: button;
+      -moz-appearance: button;
+      appearance: button;
+      width: 180px;
+      text-decoration: none;
+      color: initial;
+      background-color: royalblue;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    margin-left: 100px;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+    header {
+      background-color: lightgray;
+      text-align: center;  
+      color: black;
+      font-size: 50px;
+      font-weight: bolder;
+      font-style: italic;
+      font-family: 'Courier New', Courier, monospace;
+    }
+  
+    .footer{
+     color: blue;
+      text-align: center;
+      font-weight: bolder;
+      margin-top: 40px;
+      
+    }
+  
+    .container {
+     
+      height: 600px;
+      float: right;
+      width: 400px;
+      /* background-color: whitesmoke; */
+      text-align: center;
+      padding: 10px;
+      margin-right: 200px;
+      margin-top: 80px;
+    }
+  
+  .info-player {
+    height: 600px;
+    width: 400px;
+   
+    text-align: center;
+    padding: 10px;
+    margin-left: 200px;
+    margin-top: 80px;   
+  }
+
+  #player {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 80px;
+  }
+  #team {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #position {
+    font-size: 20px;
+    font-weight: bold;
+  }
+    #input {
+      width: 170px;
+    }
+    
+    #searchBar {
+    width: 300px;
+    display: block;
+    border: solid royalblue;
+    }
+  
+    #search-section,
+    #button-section {
+    float: right;
+    margin-top: 5px;
+      position: absolute;
+      right: 260px;
+
+     
+    }
+  
+  
+  body {
+    background-color: gray;
+  }
+  
+  h1 {
+    font-style: italic; }

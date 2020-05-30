@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Project 1</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="foundation-float.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
   </head>
 
   <body>
     <style>
-      body, footer {
-        background-image: url('https://www.bls.gov/spotlight/2017/sports-and-exercise/images/cover_image.jpg');
+      body {
         
+        background-image: url('https://www.wsgw.com/wp-content/uploads/2020/04/sports-balls-640x400.jpg');
+       background-size: cover;
+       
       }
       </style>
 <header>
   NBA   /   MLB
 </header>
 <div class="navbar">
-  <a href="#contact" id="info"><i class="fa fa-fw fa-envelope"></i> Contact Us</a> 
+  <a href="#contact" id="info"><i class="fa fa-fw fa-envelope"></i> About Us</a> 
   <div class="dropdown">
     <button class="dropbtn">Select A Sport 
       <i class="fa fa-caret-down"></i>
@@ -48,29 +51,32 @@
 
 <main>
   <div id="athlete-view">
-<h3>Special Surprise</h3>
-
-<a href="https://www.youtube.com/watch?v=t22flliJLTQ" id="basketLink" class="button">Basketball fans only</a>
+<h3>Top Plays</h3>
+<iframe width="320" height="250" src="https://www.youtube.com/embed/U-R_7BrPIVs"
+ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
-<a href="https://www.youtube.com/watch?v=tMBKbyDzGD8" id="baseLink" class="button">Baseball fans only</a>
+<iframe width="320" height="250"
+ src="https://www.youtube.com/embed/tMBKbyDzGD8" frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen></iframe>
   </div>
  
 </main>
 </div>
-<div class="card">
+<div class="info-player">
   
     <aside>
       <div id="playerInfo">
         <h4>Player Info:</h4>
-        
+        <br>
         <div id="player">
-
+          
         </div>
-
+        <br>
         <div id="team">
 
         </div>
-
+        <br>
         <div id="position">
 
         </div>
@@ -82,7 +88,7 @@
 </div>
 
 
-<footer>
+<div class="footer">
   <div class="contact" id="contact">
   <h5>Designed by: Natalia Arias, Journey Cruz, Joseph Arocha</h5>
   <br>
@@ -90,9 +96,10 @@
   <br>
   <p>Contact Us</p>
   <p>Email :</p>
-  <p>Social Media:</p>
+  <p>hozerpffp2009@gmail.com</p>
+  
+  </div>
 </div>
-</footer>
 
 <script src="./project-1.js"></script>
   </body>

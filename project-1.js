@@ -1,6 +1,6 @@
 //var q = "";
 // for testing
-var q = "James";
+var q = "";
 //var isActive = "";
 //for testing
 var isActive = "Y"
@@ -65,9 +65,9 @@ function getBasketballInfo(q) {
        var team = response.data[0].team.full_name;
        var position = response.data[0].position;
        console.log("NAME: " + name + " TEAM: " + team + " POSITION: " + position);
-       $("#player").text(name);
-       $("#team").text(team);
-       $("#position").text(position);
+       $("#player").text("Player Name: " + name);
+       $("#team").text("Player Team: " + team);
+       $("#position").text("Position: " + position);
    });
 }
  
@@ -90,6 +90,9 @@ function getBaseballInfo(q, isActive) {
        var team = response.search_player_all.queryResults.row.team_full;
        var position = response.search_player_all.queryResults.row.position;
        console.log("NAME: " + name + " TEAM: " + team + " POSITION: " + position);
+       $("#player").text("Player Name: " + name);
+       $("#team").text("Player Team: " + team);
+       $("#position").text("Position: " + position);
 
    });
 };

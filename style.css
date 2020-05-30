@@ -91,10 +91,10 @@ html {
       font-family: 'Courier New', Courier, monospace;
     }
   
-    footer{
-      background-color: lightgray;
+    .footer{
+     color: blue;
       text-align: center;
-      border: solid white 40px;
+      font-weight: bolder;
       margin-top: 40px;
       
     }
@@ -104,17 +104,17 @@ html {
       height: 400px;
       float: right;
       width: 400px;
-      background-color: whitesmoke;
+      /* background-color: whitesmoke; */
       text-align: center;
       padding: 10px;
       margin-right: 200px;
       margin-top: 80px;
     }
   
-  .card {
+  .info-player {
     height: 400px;
     width: 400px;
-    border: solid red;
+   
     text-align: center;
     padding: 10px;
     margin-left: 200px;

@@ -65,7 +65,9 @@ function getBasketballInfo(q) {
        var team = response.data[0].team.full_name;
        var position = response.data[0].position;
        console.log("NAME: " + name + " TEAM: " + team + " POSITION: " + position);
-
+       $("#player").text(name);
+       $("#team").text(team);
+       $("#position").text(position);
    });
 }
  

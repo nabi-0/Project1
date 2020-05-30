@@ -101,7 +101,7 @@ html {
   
     .container {
      
-      height: 400px;
+      height: 600px;
       float: right;
       width: 400px;
       /* background-color: whitesmoke; */
@@ -112,14 +112,27 @@ html {
     }
   
   .info-player {
-    height: 400px;
+    height: 600px;
     width: 400px;
    
     text-align: center;
     padding: 10px;
     margin-left: 200px;
+    margin-top: 80px;   
+  }
+
+  #player {
+    font-size: 20px;
+    font-weight: bold;
     margin-top: 80px;
-    
+  }
+  #team {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #position {
+    font-size: 20px;
+    font-weight: bold;
   }
     #input {
       width: 170px;
@@ -135,7 +148,9 @@ html {
     #button-section {
     float: right;
     margin-top: 5px;
-      
+      position: absolute;
+      right: 260px;
+
      
     }
   

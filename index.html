@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
     integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-typeahead/2.11.0/jquery.typeahead.min.js"></script>
 </head>
 
 <body>
@@ -20,63 +19,6 @@
 
       background-image: url('https://www.wsgw.com/wp-content/uploads/2020/04/sports-balls-640x400.jpg');
       background-size: cover;
-
-    }
-  </style>
-  <header>
-    NBA / MLB
-  </header>
-  <div class="navbar">
-    <a href="#contact" id="info"><i class="fa fa-fw fa-envelope"></i> About Us</a>
-    <div class="dropdown">
-      <button class="dropbtn">Select A Sport
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <ul id="sportDropdown" class="dropdown-content no-bullet">
-        <li id="NBA"><a href="#">NBA</a></li>
-        <li id="active"><a href="#">MLB current players</a></li>
-        <li id="inactive"><a href="#">MLB retired players</a></li>
-      </ul>
-    </div>
-    <section id="search-section">
-      <div id="search">
-        <input class="typeahead" type="text" id="searchBar" placeholder="Enter player name">
-    </section>
-    <section id="button-section">
-      <button id="searchBtn" class="button"><i class="fa fa-fw fa-search typeahead"></i>Search</button>
-    </section>
-  </div>
-  </div>
-  </div>
-  <div id="the-basics">
-    <input class="typeahead" type="text" placeholder="States of USA">
-  </div>
-
-  <div class="container">
-
-    <main>
-      <div id="athlete-view">
-        <h3>Top Plays</h3>
-        <iframe width="320" height="250" src="https://www.youtube.com/embed/U-R_7BrPIVs" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <br>
-        <iframe width="320" height="250" src="https://www.youtube.com/embed/tMBKbyDzGD8" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-    </main>
-  </div>
-  <div class="info-player">
-
-    <aside>
-      <div id="playerInfo">
-        <h4>Player Info:</h4>
-        <br>
-        <div id="player">
-
-        </div>
-        <br>
-        <div id="team">
 
     }
   </style>
@@ -122,26 +64,56 @@
 
   <div class="row">
 
+    <div class="small-5 columns">
+      <div class="info-player">
+        <!-- <aside> -->
+          <div id="playerInfo">
+            <h4>Player Info:</h4>
+            <br>
+            <div id="player">
+
+            </div>
+            <br>
+            <div id="team">
+
+            </div>
+            <br>
+            <div id="position">
+
+            </div>
+          </div>
+        <!-- </aside> -->
       </div>
-    </aside>
-
-
+    </div>  
+    <div class="small-5 columns">
+      <div class="container">
+        <!-- <main> -->
+          <div id="athlete-view">
+            <h3>Top Plays</h3>
+            <iframe width="320" height="250" src="https://www.youtube.com/embed/U-R_7BrPIVs" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <iframe width="320" height="250" src="https://www.youtube.com/embed/tMBKbyDzGD8" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        <!-- </main> -->
+      </div>
+    </div>  
   </div>
 
-
-  <div class="footer">
-    <div class="contact" id="contact">
-      <h5>Designed by: Natalia Arias, Journey Cruz, Joseph Arocha</h5>
-      <br>
-      <p>05/2020</p>
-      <br>
-      <p>Contact Us</p>
-      <p>Email :</p>
-      <p>hozerpffp2009@gmail.com</p>
-
+  <div class="row">
+    <div class="footer">
+      <div class="contact" id="contact">
+        <h5>Designed by: Natalia Arias, Journey Cruz, Joseph Arocha</h5>
+        <br>
+        <p>05/2020</p>
+        <br>
+        <p>Contact Us</p>
+        <p>Email :</p>
+        <p>hozerpffp2009@gmail.com</p>
+      </div>
     </div>
   </div>
-
   <script src="./project-1.js"></script>
 </body>
 

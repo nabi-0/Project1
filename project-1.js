@@ -1,11 +1,94 @@
-//var q = "";
 // for testing
-var q = "";
+var query = "";
 //var isActive = "";
 //for testing
 var isActive = "Y"
 
 var sport = "";
+
+var substringMatcher = function (strs) {
+    return function findMatches(q, cb) {
+        var matches, substrRegex;
+
+        // an array that will be populated with substring matches
+        matches = [];
+
+        // regex used to determine if a string contains the substring `q`
+        substrRegex = new RegExp(q, 'i');
+
+        // iterate through the pool of strings and for any string that
+        // contains the substring `q`, add it to the `matches` array
+        $.each(strs, function (i, str) {
+            if (substrRegex.test(str)) {
+                // the typeahead jQuery plugin expects suggestions to a
+                // JavaScript object, refer to typeahead docs for more info
+                matches.push({
+                    value: str
+                });
+            }
+        });
+
+        cb(matches);
+    };
+};
+
+var allNbaNames = [];
+
+$('#the-basics .typeahead').typeahead({
+    hint: true,
+    highlight: true,
+    minLength: 1
+}, {
+    name: 'AllNbaPlayers',
+    displayKey: 'value',
+    source: substringMatcher(allNbaNames)
+});
+
+var totalPagesLength = 31;
+var pagescount = 0;
+
+function typeaheadNbaSearch() {
+    var settings = {
+        "async": false,
+        "cache": false,
+        "crossDomain": true,
+        "url": "https://free-nba.p.rapidapi.com/players?page=0&per_page=3268",
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "free-nba.p.rapidapi.com",
+            "x-rapidapi-key": "75707fa799msha4a06e78acf5fdcp1f1ec2jsn683a106045e2"
+        },
+        "success": function (data) {
+            pagescount++;
+            if (pagescount < totalPagesLength) {
+                typeaheadNbaSearch();
+            }
+        }
+    }
+
+    $.ajax(settings).then(function (response) {
+       
+
+        for (let i = 0; i < response.data.length; i++) {
+            var currentFirstName = response.data[i].first_name;
+            var currentLastName = response.data[i].last_name;
+            var fullName = currentFirstName + " " + currentLastName;
+
+            allNbaNames.push(fullName);
+        }
+        if(pagescount == totalPagesLength-1){
+            var allNbaNamesLength = allNbaNames.length;
+        }
+        //fs.writeFile('./data.json', JSON.stringify(allNbaNamesLength) , 'utf-8');
+
+
+    });
+    
+};
+
+
+
+typeaheadNbaSearch();
 
 
 // on click of dropdown (or options?) get selected option
@@ -45,11 +128,11 @@ $("#searchBtn").on("click", function () {
 });
 
 // basketball player search
-function getBasketballInfo(q) {
+function getBasketballInfo(query) {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://free-nba.p.rapidapi.com/players?page=0&per_page=25&search=" + q,
+        "url": "https://free-nba.p.rapidapi.com/players?page=0&per_page=25&search=" + query,
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "free-nba.p.rapidapi.com",
@@ -72,11 +155,11 @@ function getBasketballInfo(q) {
 }
 
 //baseball player search
-function getBaseballInfo(q, isActive) {
+function getBaseballInfo(query, isActive) {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "http://lookup-service-prod.mlb.com/json/named.search_player_all.bam?sport_code='mlb'&active_sw=" + "'" + isActive + "'" + "&name_part='" + q + "%25'",
+        "url": "http://lookup-service-prod.mlb.com/json/named.search_player_all.bam?sport_code='mlb'&active_sw=" + "'" + isActive + "'" + "&name_part='" + query + "%25'",
     }
     $.ajax(settings).done(function (response) {
         console.log(response);
@@ -96,4 +179,3 @@ function getBaseballInfo(q, isActive) {
 
     });
 };
-

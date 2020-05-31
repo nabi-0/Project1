@@ -325,3 +325,7 @@ html {
         margin-top: 40px;
       }
     }
+
+    .image {
+      height: 150px;
+    }

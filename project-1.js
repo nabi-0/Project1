@@ -33,8 +33,7 @@ var substringMatcher = function (strs) {
 };
 
 var allNbaNames = [];
-var allMlbNames = [];
-var sportSelectedNames
+
 
 $('#the-basics .typeahead').typeahead({
     hint: true,
@@ -54,7 +53,6 @@ function addAllNba() {
 
     while (pagescount < totalPagesLength) {
             pagescount++;
-            console.log(pagescount);
             var settings = {
                 "async": true,
                 //"cache": false,
@@ -152,11 +150,21 @@ function getBasketballInfo(query) {
         var lastName = response.data[0].last_name;
         var name = firstName + " " + lastName;
         var team = response.data[0].team.full_name;
+        var teamIndex = teamPics.map(function(e) { 
+            return e.team; 
+        }).indexOf(team);
+        var imgUrl = teamPics[teamIndex].imgUrl;
+        console.log(imgUrl);
+        var teamImg = document.getElementById("imgUrl");
+        teamImg.setAttribute("src", imgUrl);
+        
+        //console.log(teamIndex);
         var position = response.data[0].position;
         console.log("NAME: " + name + " TEAM: " + team + " POSITION: " + position);
         $("#player").text("Player Name: " + name);
         $("#team").text("Player Team: " + team);
         $("#position").text("Position: " + position);
+       
     });
 }
 

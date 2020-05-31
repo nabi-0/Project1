@@ -33,62 +33,68 @@ var substringMatcher = function (strs) {
 };
 
 var allNbaNames = [];
+var allMlbNames = [];
+var sportSelectedNames
 
 $('#the-basics .typeahead').typeahead({
     hint: true,
     highlight: true,
     minLength: 1
 }, {
-    name: 'AllNbaPlayers',
+    name: 'SportNames',
     displayKey: 'value',
     source: substringMatcher(allNbaNames)
 });
 
-var totalPagesLength = 31;
-var pagescount = 0;
 
-function typeaheadNbaSearch() {
-    var settings = {
-        "async": false,
-        "cache": false,
-        "crossDomain": true,
-        "url": "https://free-nba.p.rapidapi.com/players?page=0&per_page=3268",
-        "method": "GET",
-        "headers": {
-            "x-rapidapi-host": "free-nba.p.rapidapi.com",
-            "x-rapidapi-key": "75707fa799msha4a06e78acf5fdcp1f1ec2jsn683a106045e2"
-        },
-        "success": function (data) {
+function addAllNba() {
+    var pagescount = 1;
+    var totalPagesLength = 32;
+
+
+    while (pagescount < totalPagesLength) {
             pagescount++;
-            if (pagescount < totalPagesLength) {
-                typeaheadNbaSearch();
+            console.log(pagescount);
+            var settings = {
+                "async": true,
+                //"cache": false,
+                "crossDomain": true,
+                "url": "https://free-nba.p.rapidapi.com/players?page=" + pagescount + "&per_page=3268",
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-host": "free-nba.p.rapidapi.com",
+                    "x-rapidapi-key": "75707fa799msha4a06e78acf5fdcp1f1ec2jsn683a106045e2"
+                },
+                /*"success": function (data) {
+                    pagescount++;
+                    if (pagescount < totalPagesLength) {
+                        typeaheadNbaSearch();
+                    }
+                }*/
             }
-        }
-    }
 
-    $.ajax(settings).then(function (response) {
-       
+            $.ajax(settings).then(function (response) {
+                //console.log(response);
 
-        for (let i = 0; i < response.data.length; i++) {
-            var currentFirstName = response.data[i].first_name;
-            var currentLastName = response.data[i].last_name;
-            var fullName = currentFirstName + " " + currentLastName;
+                
+                for (let i = 0; i < 100; i++) {
+                    var currentFirstName = response.data[i].first_name;
+                    var currentLastName = response.data[i].last_name;
+                    var fullName = currentFirstName + " " + currentLastName;
 
-            allNbaNames.push(fullName);
-        }
-        if(pagescount == totalPagesLength-1){
-            var allNbaNamesLength = allNbaNames.length;
-        }
-        //fs.writeFile('./data.json', JSON.stringify(allNbaNamesLength) , 'utf-8');
+                    allNbaNames.push(fullName);
+                }
+            });
 
-
-    });
+        };
     
+    // end of function
 };
 
 
 
-typeaheadNbaSearch();
+//typeaheadNbaSearch();
+addAllNba();
 
 
 // on click of dropdown (or options?) get selected option

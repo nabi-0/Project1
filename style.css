@@ -99,7 +99,8 @@ html {
       0 10px 10px rgba(0,0,0,.2),
       0 20px 20px rgba(0,0,0,.15);
   }
-    header, p {      
+    header, p {  
+      margin-top: 40px;    
       text-align: center;  
       color: black;
       font-size: 50px;
@@ -136,7 +137,7 @@ html {
       /* background-color: whitesmoke; */
       text-align: center;
       padding: 10px;
-      /* margin-right: 200px; */
+      margin-left: 150px;
       margin-top: 80px;
     }
   
@@ -144,18 +145,18 @@ html {
   .info-player {
     height: 600px;
     width: 400px;
-   
+   float: right;
     text-align: center;
     padding: 10px;
-   
-    margin-top: 80px;   
+   margin-right: 150px;
+    margin-top: 20px;   
   }
 
   #player {
     font-style: italic;
     font-size: 30px;
     font-weight: bold;
-    margin-top: 150px;
+    margin-top: 20px;
     color: red;
     text-shadow:  0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
@@ -219,7 +220,7 @@ html {
     float: right;
     margin-top: 20px;
       position: absolute;
-      right: 260px;
+      right: 150px;
 
      
     }
@@ -265,67 +266,38 @@ html {
       0 20px 20px rgba(0,0,0,.15);
     }
 
-    @media screen and (max-width: 968px) {
-     
-    
-      .container, .info-player {
-        /* Box-model */
-        width: 100%;
-        height: 400px;
-        padding: 20px;
-      }
-    
-     .navbar {
-        width: 100%;
-      }
-    
-      #sidebar {
-        margin-top: 40px;
-      }
-    }
-    
-    /* Additional Screen Sizes */
-    
-    /* Width at 320px and below */
-    @media screen and (max-width: 320px) {
+    .flex {
+      display: flex;
+     flex-wrap: wrap;
+   }
    
-    
-      .container, .info-player {
-        /* Box-model */
-        width: 100%;
-        height: 300px;
-        padding: 20px;
-      }
-    
-     .navbar{
-        width: 100%;
-      }
-    
-      #sidebar {
-        margin-top: 40px;
-      }
-    }
-    
-    /* Width at 168px and below */
-    @media screen and (max-width: 168px) {
-  
-    
-      .container, .info-player {
-        /* Box-model */
-        width: 100%;
-        height: 300px;
-        padding: 20px;
-      }
-    
-    .navbar {
-        width: 100%;
-      }
-    
-      #sidebar {
-        margin-top: 40px;
-      }
+   .flex > * {
+     flex: 1 1 250px;
+     margin: 10px;
+   }
+   
+   .grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+     grid-gap: 20px;
+     padding: 10px;
+   }
+
+    @media screen and (max-width: 1100px) {
+     .navbar {
+       max-width: 100%;
+       
+     }
+     #search-section, #button-section { 
+      margin-top: 60px;
+     }
+   
+    .container {
+      display: flex;
+      flex-wrap: wrap;
     }
 
-    .image {
-      height: 150px;
     }
+    
+    
+  

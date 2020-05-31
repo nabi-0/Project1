@@ -140,6 +140,7 @@ html {
       margin-top: 80px;
     }
   
+
   .info-player {
     height: 600px;
     width: 400px;
@@ -323,4 +324,8 @@ html {
       #sidebar {
         margin-top: 40px;
       }
+    }
+
+    .image {
+      height: 150px;
     }

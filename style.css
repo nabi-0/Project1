@@ -15,21 +15,19 @@ html {
       -webkit-appearance: button;
       -moz-appearance: button;
       appearance: button;
-      width: 180px;
-      text-decoration: none;
       color: initial;
       background-color: blue;
   }
   
   .navbar {
     overflow: hidden;
-    /* background-color: rgb(193, 198, 202); */
+  
   }
   
   .navbar a {
     float: left;
     font-size: 16px;
-    color: blue;
+    color: rgb(0, 224, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -46,7 +44,6 @@ html {
     font-size: 16px;  
     border: none;
     outline: none;
-    color: white;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -54,13 +51,13 @@ html {
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: lightgrey;
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: lightgrey;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -76,7 +73,7 @@ html {
   }
   
   .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: rgb(197, 221, 230);
   }
   
   .dropdown:hover .dropdown-content {
@@ -122,7 +119,7 @@ html {
     }
   
     .footer{
-     color: blue;
+     color: black;
       text-align: center;
       font-weight: bolder;
       margin-top: 40px;
@@ -137,8 +134,8 @@ html {
       /* background-color: whitesmoke; */
       text-align: center;
       padding: 10px;
-      margin-left: 150px;
-      margin-top: 80px;
+      margin-left: 50px;
+      margin-top: 20px;
     }
   
 
@@ -148,7 +145,7 @@ html {
    float: right;
     text-align: center;
     padding: 10px;
-   margin-right: 150px;
+   margin-right: 50px;
     margin-top: 20px;   
   }
 
@@ -212,7 +209,7 @@ html {
     #searchBar {
     width: 300px;
     display: block;
-    border: solid royalblue;
+  
     }
   
     #search-section,
@@ -220,11 +217,11 @@ html {
     float: right;
     margin-top: 20px;
       position: absolute;
-      right: 150px;
-
-     
+      right: 150px;       
     }
-  
+  #searchBtn {
+    background-color:rgb(0, 224, 0);
+  }
   
   body {
     background-color: gray;
@@ -265,23 +262,23 @@ html {
       0 10px 10px rgba(0,0,0,.2),
       0 20px 20px rgba(0,0,0,.15);
     }
+    h5 {
+      
+      text-shadow:  0 1px 0 #ccc,
+      0 2px 0 #c9c9c9,
+      0 3px 0 #bbb,
+      0 4px 0 #b9b9b9,
+      0 5px 0 #aaa,
+      0 6px 1px rgba(0,0,0,.1),
+      0 0 5px rgba(0,0,0,.1),
+      0 1px 3px rgba(0,0,0,.3),
+      0 3px 5px rgba(0,0,0,.2),
+      0 5px 10px rgba(0,0,0,.25),
+      0 10px 10px rgba(0,0,0,.2),
+      0 20px 20px rgba(0,0,0,.15);
+    }
 
-    .flex {
-      display: flex;
-     flex-wrap: wrap;
-   }
-   
-   .flex > * {
-     flex: 1 1 250px;
-     margin: 10px;
-   }
-   
-   .grid {
-     display: grid;
-     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-     grid-gap: 20px;
-     padding: 10px;
-   }
+    
 
     @media screen and (max-width: 1100px) {
      .navbar {

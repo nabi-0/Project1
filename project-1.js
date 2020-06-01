@@ -100,13 +100,16 @@ $("#sportDropdown li").on("click", function () {
     sport = $(this).text();
     sportID = this.id
     console.log(sport);
-
+    if (sportID == "NBA") {
+        document.body.style.backgroundImage = "url('./assets/0X48MP.jpg')";
+    }
     if (sportID == "inactive") {
         isActive = "N";
-
+        document.body.style.backgroundImage = "url('./assets/baseball-field-widescreen-wallpaper-50243-51931-hd-wallpapers.jpg')";
     }
     if (sportID == "active") {
         isActive = "Y";
+        document.body.style.backgroundImage = "url('./assets/baseball-field-widescreen-wallpaper-50243-51931-hd-wallpapers.jpg')";
     }
 
     // close on click?

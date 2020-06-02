@@ -21,13 +21,19 @@ html {
   
   .navbar {
     overflow: hidden;
-  
+  border: solid gray 2px;
+  background-color: whitesmoke;
+  }
+  .header {
+    float: left;
+    margin-left: 200px;
+    
   }
   
   .navbar a {
     float: left;
     font-size: 16px;
-    color: rgb(0, 224, 0);
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -123,7 +129,8 @@ html {
       text-align: center;
       font-weight: bolder;
       margin-top: 40px;
-      
+      border: solid gray 2px;
+      background-color: whitesmoke;
     }
   
     .container {
@@ -134,7 +141,7 @@ html {
       /* background-color: whitesmoke; */
       text-align: center;
       padding: 10px;
-      margin-left: 50px;
+      margin-left: 150px;
       margin-top: 20px;
     }
   
@@ -145,7 +152,7 @@ html {
    float: right;
     text-align: center;
     padding: 10px;
-   margin-right: 50px;
+   margin-right: 150px;
     margin-top: 20px;   
   }
 
@@ -249,6 +256,7 @@ html {
 
     h3 {
       font-weight: bolder;
+     
       text-shadow:  0 1px 0 #ccc,
       0 2px 0 #c9c9c9,
       0 3px 0 #bbb,
@@ -285,9 +293,7 @@ html {
        max-width: 100%;
        
      }
-     #search-section, #button-section { 
-      margin-top: 60px;
-     }
+    
    
     .container {
       display: flex;
@@ -296,5 +302,9 @@ html {
 
     }
     
-    
-  
+    @media screen and (max-width: 950px) {
+      #search-section, #button-section { 
+        margin-top: 60px;
+       }
+    }
+   

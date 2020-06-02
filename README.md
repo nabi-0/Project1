@@ -6,21 +6,23 @@ We would like to develop a website that will let the user enter a famous athlete
 
 ## Developers
 
- Joseph Arocha: https://github.com/hozerpffp2009
- Journey Ccruz: https://github.com/journeycruz
- Natalia Arias: https://github.com/nabi-0
+ * Joseph Arocha: https://github.com/hozerpffp2009
+ * Journey Ccruz: https://github.com/journeycruz
+ * Natalia Arias: https://github.com/nabi-0
 
 ## Technologies
 
- API links : https://rapidapi.com/api-sports/api/api-nba
+ * API links : https://rapidapi.com/api-sports/api/api-nba
              https://rapidapi.com/api-sports/api/api-football/endpoints
              https://rapidapi.com/tarfah/api/youtube-search
- CSS Framework : Foundation
- Softwear Development Host: GitHub
- Programing language: JavaScript 
- JQuery library
+ * CSS Framework : Foundation
+ * Softwear Development Host: GitHub
+ * Programing language: JavaScript 
+ * JQuery library
  
 ## Installation
+
+
 
 ## Usage
 

@@ -1,29 +1,13 @@
 # Project_1
 
-<<<<<<< HEAD
-=======
-Project Description:
-We would like to develop a website that will let a user enter a famous athlete and our web page will give you information about them for a set sport as in American Basketball (NBA). Our website will have a information section for Soccer(MLS). 
-
-Developers:
-Joseph Arocha, Journey Cruz, Natalia Arias
-Journey Cruz : github link - https://github.com/journeycruz
-Natalia Arias : github link - https://github.com/nabi-0
-Joseph Arocha : github link - https://github.com/hozerpffp2009
-
-Technologies:
-css framework : Foundation
-API links : https://rapidapi.com/api-sports/api/api-nba
-            https://rapidapi.com/api-sports/api/api-football/endpoints
-            https://rapidapi.com/tarfah/api/youtube-search
-
->>>>>>> Stashed changes
-=======
 ## Description
 
-We will develop a website that will let a user enter a 
-famous basketball or soccer player and our web page will give you 
-information about them with a video of top 10 plays on YouTube.
+We would like to develop a website that will let the user enter a famous 
+athlete in the search bar and obtain the player stats. Our web page will primarly
+generate information about the athletes current team, positin and name. We also
+want to include a section of pop up links per player that will allow the user to 
+access athelets awards, accomplishments, biography and highlights of their carrers. 
+We will mainly focus on having two sport sections; American Basketball (NBA) and Soccer(MLS).  
 
 ## Developers
 
@@ -33,13 +17,14 @@ information about them with a video of top 10 plays on YouTube.
 
 ## Technologies
 
- CSS Framework- 
-  Foundation
- API- 
-  https://rapidapi.com/api-sports/api/api-nba
-  https://rapidapi.com/api-sports/api/api-football/endpoints
-  https://rapidapi.com/tarfah/api/youtube-search
-
+ API links : https://rapidapi.com/api-sports/api/api-nba
+             https://rapidapi.com/api-sports/api/api-football/endpoints
+             https://rapidapi.com/tarfah/api/youtube-search
+ CSS Framework : Foundation
+ Softwear Development Host: GitHub
+ JavaScript
+ JQuery
+ 
 ## Installation
 
 ## Usage

@@ -194,7 +194,7 @@ function getBaseballInfo(query, isActive) {
         }).indexOf(team);
         var imgUrl = teamPics[teamIndex].imgUrl;
         var teamImg = document.getElementById("imgUrl");
-        teamImg.setAttribute("src", imgUrl);
+        teamImg.setAttribute("src", imgUrl); 
         console.log("NAME: " + name + " TEAM: " + team + " POSITION: " + position);
         $("#player").text("Player Name: " + name);
         $("#team").text("Player Team: " + team);

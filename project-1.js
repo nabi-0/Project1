@@ -105,7 +105,7 @@ $("#sportDropdown li").on("click", function () {
     }
     if (sportID == "inactive") {
         isActive = "N";
-        document.body.style.backgroundImage = "url('./assets/baseball-field-widescreen-wallpaper-50243-51931-hd-wallpapers.jpg')";
+        document.body.style.backgroundImage = "url('./assets/2cbdec9644c3b3644abf768f4010488c.jpg')";
     }
     if (sportID == "active") {
         isActive = "Y";
@@ -189,6 +189,12 @@ function getBaseballInfo(query, isActive) {
         var name = response.search_player_all.queryResults.row.name_display_first_last;
         var team = response.search_player_all.queryResults.row.team_full;
         var position = response.search_player_all.queryResults.row.position;
+        var teamIndex = teamPics.map(function(e) { 
+            return e.team; 
+        }).indexOf(team);
+        var imgUrl = teamPics[teamIndex].imgUrl;
+        var teamImg = document.getElementById("imgUrl");
+        teamImg.setAttribute("src", imgUrl); 
         console.log("NAME: " + name + " TEAM: " + team + " POSITION: " + position);
         $("#player").text("Player Name: " + name);
         $("#team").text("Player Team: " + team);

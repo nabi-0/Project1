@@ -176,7 +176,7 @@ function getBaseballInfo(query, isActive) {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "http://lookup-service-prod.mlb.com/json/named.search_player_all.bam?sport_code='mlb'&active_sw=" + "'" + isActive + "'" + "&name_part='" + query + "%25'",
+        "url": "https://lookup-service-prod.mlb.com/json/named.search_player_all.bam?sport_code='mlb'&active_sw=" + "'" + isActive + "'" + "&name_part='" + query + "%25'",
     }
     $.ajax(settings).done(function (response) {
         console.log(response);

@@ -129,7 +129,7 @@ $("#searchBtn").on("click", function () {
     } else if (sportID == "active" || sportID == "inactive") {
         getBaseballInfo(q, isActive);
     } else {
-        alert("Please select a sport.");
+        console.log("Please select a sport.");
     }
 
 });

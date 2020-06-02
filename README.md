@@ -2,12 +2,7 @@
 
 ## Description
 
-We would like to develop a website that will let the user enter a famous 
-athlete in the search bar and obtain the player stats. Our web page will primarly
-generate information about the athletes current team, positin and name. We also
-want to include a section of pop up links per player that will allow the user to 
-access athelets awards, accomplishments, biography and highlights of their carrers. 
-We will mainly focus on having two sport sections; American Basketball (NBA) and Soccer(MLS).  
+We would like to develop a website that will let the user enter a famous athlete in the search bar and obtain the player stats. Our web page will primarly generate information about the athletes current team, positin and name. We also want to include a section of pop up links per player that will allow the user to access athelets awards, accomplishments, biography and highlights of their carrers. We will mainly focus on having two sport sections; American Basketball (NBA) and Soccer(MLS).  
 
 ## Developers
 
@@ -22,8 +17,8 @@ We will mainly focus on having two sport sections; American Basketball (NBA) and
              https://rapidapi.com/tarfah/api/youtube-search
  CSS Framework : Foundation
  Softwear Development Host: GitHub
- JavaScript
- JQuery
+ Programing language: JavaScript 
+ JQuery library
  
 ## Installation
 

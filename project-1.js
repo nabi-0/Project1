@@ -1,7 +1,6 @@
 // for testing
 var query = "";
-//var isActive = "";
-//for testing
+
 var isActive = "Y"
 
 var sport = "";
@@ -34,7 +33,6 @@ var substringMatcher = function (strs) {
 
 var allNbaNames = [];
 
-
 $('#the-basics .typeahead').typeahead({
     hint: true,
     highlight: true,
@@ -44,7 +42,6 @@ $('#the-basics .typeahead').typeahead({
     displayKey: 'value',
     source: substringMatcher(allNbaNames)
 });
-
 
 function addAllNba() {
     var pagescount = 1;
@@ -89,8 +86,6 @@ function addAllNba() {
     // end of function
 };
 
-
-
 //typeaheadNbaSearch();
 addAllNba();
 
@@ -129,7 +124,7 @@ $("#searchBtn").on("click", function () {
     } else if (sportID == "active" || sportID == "inactive") {
         getBaseballInfo(q, isActive);
     } else {
-        alert("Please select a sport.");
+        console.log("Please select a sport.");
     }
 
 });

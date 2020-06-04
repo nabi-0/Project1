@@ -178,11 +178,8 @@ a {
   }
 
   .container {
-   
     height: 600px;
-    /* float: right; */
     width: 300px;
-    /* background-color: whitesmoke; */
     text-align: center;
     padding: 10px;
     margin-left: 50px;

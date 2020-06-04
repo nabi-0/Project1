@@ -4,23 +4,23 @@
   padding: 8px 12px;
   font-size: 24px;
   line-height: 30px;
-  border: 2px solid #ccc;
+  border: 2px solid rgb(179, 135, 135);
   border-radius: 8px;
   outline: none;
 }
 
 
 .tt-hint {
-  color: #999;
+  color: rgb(179, 135, 135);
 }
 
 .tt-menu {
   width: 300px;
   margin-top: 12px;
   padding: 8px 0;
-  background-color: #fff;
+  background-color: white;
   border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(33, 1, 92, 0.2);
   border-radius: 8px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
@@ -34,7 +34,7 @@
 .tt-suggestion.tt-is-under-cursor {
 
   color: #fff;
-  background-color: #0097cf;
+  background-color: #0015cf;
 
 }
 
@@ -196,10 +196,10 @@ a {
 .info-player {
   height: 400px;
   width: 300px;
- float: right;
+  float: right;
   text-align: center;
   padding: 10px;
- margin-right: 50px;
+  margin-right: 50px;
   margin-top: 20px;   
 }
 
@@ -225,7 +225,7 @@ a {
 #team {
   font-size: 20px;
   font-weight: bold;
-  color: red;
+  color: rgb(0, 162, 255);
   text-shadow:  0 1px 0 #ccc,
              0 2px 0 #c9c9c9,
              0 3px 0 #bbb,
@@ -242,7 +242,7 @@ a {
 #position {
   font-size: 20px;
   font-weight: bold;
-  color: red;
+  color: rgb(0, 162, 255);
   text-shadow:  0 1px 0 #ccc,
              0 2px 0 #c9c9c9,
              0 3px 0 #bbb,
@@ -274,7 +274,7 @@ a {
     right: 150px;       
   }
 #searchBtn {
-  background-color:rgb(0, 224, 0);
+  background-color:rgb(0, 41, 224);
 }
 
 body {

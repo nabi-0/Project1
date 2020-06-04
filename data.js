@@ -1,3 +1,4 @@
+// Array of images for each team, no available API
 var teamPics = [
     {team: "Boston Celtics" ,
     imgUrl: "./assets/1280px-Boston_Celtics.svg.png"},

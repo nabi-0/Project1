@@ -12,7 +12,7 @@ We would like to develop a website that will let the user enter a famous athlete
 
 ## Technologies
 
-* Server Side API's: Free-Nba - "https://free-nba.p.rapidapi.com", MLB Data - "https://lookup-service-prod.mlb.com"
+* Server Side API's: Free-NBA Data - "https://free-nba.p.rapidapi.com", Free-MLB Data - "https://lookup-service-prod.mlb.com"
 * CSS Framework : Zurb Foundation
 * 3rd Party API: Typeahead.js
 * Software Development Host: GitHub
@@ -58,5 +58,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-

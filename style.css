@@ -8,12 +8,9 @@
   border-radius: 8px;
   outline: none;
 }
-
-
 .tt-hint {
   color: rgb(179, 135, 135);
 }
-
 .tt-menu {
   width: 300px;
   margin-top: 12px;
@@ -24,56 +21,47 @@
   border-radius: 8px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
-
 .tt-suggestion {
   padding: 3px 20px;
   font-size: 18px;
   line-height: 24px;
 }
-
 .tt-suggestion.tt-is-under-cursor {
-
   color: #fff;
   background-color: #0015cf;
-
 }
-
 .tt-suggestion p {
   margin: 0;
 }
-
 html {
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%; }
-
-  #basketLink {
-    margin-top: 30px;
-  }
-  #baseLink {
-    margin-top: 150px;
-  }
-  #info {
+  -webkit-text-size-adjust: 100%;
+}
+#basketLink {
+  margin-top: 30px;
+}
+#baseLink {
+  margin-top: 150px;
+}
+#info {
   margin-left: 50px;
 }
-  a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    color: initial;
-    background-color: blue;
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  color: initial;
+  background-color: blue;
 }
-
 .navbar {
   overflow: hidden;
-border: solid gray 2px;
-background-color: whitesmoke;
+  border: solid gray 2px;
+  background-color: whitesmoke;
 }
 .header {
   float: left;
   margin-left: 50px;
-  
 }
-
 .navbar a {
   float: left;
   font-size: 16px;
@@ -83,13 +71,11 @@ background-color: whitesmoke;
   text-decoration: none;
   font-size: 20px;
 }
-
 .dropdown {
   float: left;
   overflow: hidden;
   margin-left: 50px;
 }
-
 .dropdown .dropbtn {
   font-size: 16px;  
   border: none;
@@ -99,11 +85,9 @@ background-color: whitesmoke;
   font-family: inherit;
   margin: 0;
 }
-
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: lightgrey;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -112,7 +96,6 @@ background-color: whitesmoke;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   float: none;
   color: black;
@@ -121,19 +104,17 @@ background-color: whitesmoke;
   display: block;
   text-align: left;
 }
-
 .dropdown-content a:hover {
   background-color: rgb(197, 221, 230);
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
 a {
   color: blue;
-  
   font-weight: bolder;
-  text-shadow:  0 1px 0 #ccc,
+  text-shadow:
+    0 1px 0 #ccc,
     0 2px 0 #c9c9c9,
     0 3px 0 #bbb,
     0 4px 0 #b9b9b9,
@@ -146,15 +127,16 @@ a {
     0 10px 10px rgba(0,0,0,.2),
     0 20px 20px rgba(0,0,0,.15);
 }
-  header, p {  
-    margin-top: 50px;    
-    text-align: center;  
-    color: black;
-    font-size: 50px;
-    font-weight: bolder;
-    font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
-    text-shadow:  0 1px 0 #ccc,
+header, p {  
+  margin-top: 50px;    
+  text-align: center;  
+  color: black;
+  font-size: 50px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow:
+    0 1px 0 #ccc,
     0 2px 0 #c9c9c9,
     0 3px 0 #bbb,
     0 4px 0 #b9b9b9,
@@ -166,33 +148,29 @@ a {
     0 5px 10px rgba(0,0,0,.25),
     0 10px 10px rgba(0,0,0,.2),
     0 20px 20px rgba(0,0,0,.15);
-  }
-
-  .footer{
-   color: black;
-    text-align: center;
-    font-weight: bolder;
-    margin-top: 40px;
-    border: solid gray 2px;
-    background-color: whitesmoke;
-  }
-
-  .container {
-    height: 600px;
-    width: 300px;
-    text-align: center;
-    padding: 10px;
-    margin-left: 50px;
-    margin-top: 20px;
-  }
-
-  .logo {
-    text-align: center;
-    float: right;
-    margin-right: 200px;
-    margin-top: 20px;
-  }
-
+}
+.footer{
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 40px;
+  border: solid gray 2px;
+  background-color: whitesmoke;
+}
+.container {
+  height: 600px;
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.logo {
+  text-align: center;
+  float: right;
+  margin-right: 200px;
+  margin-top: 20px;
+}
 .info-player {
   height: 400px;
   width: 300px;
@@ -202,92 +180,88 @@ a {
   margin-right: 50px;
   margin-top: 20px;   
 }
-
 #player {
   font-style: italic;
   font-size: 40px;
   font-weight: bold;
   margin-top: 20px;
   color: rgb(0, 4, 255);
-  text-shadow:  0 1px 0 #ccc,
-             0 2px 0 #c9c9c9,
-             0 3px 0 #bbb,
-             0 4px 0 #b9b9b9,
-             0 5px 0 #aaa,
-             0 6px 1px rgba(0,0,0,.1),
-             0 0 5px rgba(0,0,0,.1),
-             0 1px 3px rgba(0,0,0,.3),
-             0 3px 5px rgba(0,0,0,.2),
-             0 5px 10px rgba(0,0,0,.25),
-             0 10px 10px rgba(0,0,0,.2),
-             0 20px 20px rgba(0,0,0,.15);
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
 }
 #team {
   font-size: 30px;
   font-weight: bold;
   color: rgb(0, 4, 255);
-  text-shadow:  0 1px 0 #ccc,
-             0 2px 0 #c9c9c9,
-             0 3px 0 #bbb,
-             0 4px 0 #b9b9b9,
-             0 5px 0 #aaa,
-             0 6px 1px rgba(0,0,0,.1),
-             0 0 5px rgba(0,0,0,.1),
-             0 1px 3px rgba(0,0,0,.3),
-             0 3px 5px rgba(0,0,0,.2),
-             0 5px 10px rgba(0,0,0,.25),
-             0 10px 10px rgba(0,0,0,.2),
-             0 20px 20px rgba(0,0,0,.15);
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
 }
 #position {
   font-size: 30px;
   font-weight: bold;
   color: rgb(0, 4, 255);
-  text-shadow:  0 1px 0 #ccc,
-             0 2px 0 #c9c9c9,
-             0 3px 0 #bbb,
-             0 4px 0 #b9b9b9,
-             0 5px 0 #aaa,
-             0 6px 1px rgba(0,0,0,.1),
-             0 0 5px rgba(0,0,0,.1),
-             0 1px 3px rgba(0,0,0,.3),
-             0 3px 5px rgba(0,0,0,.2),
-             0 5px 10px rgba(0,0,0,.25),
-             0 10px 10px rgba(0,0,0,.2),
-             0 20px 20px rgba(0,0,0,.15);
+  text-shadow:
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
 }
-  #input {
-    width: 170px;
-  }
-  
-  #searchBar {
+#input {
+  width: 170px;
+}
+#searchBar {
   width: 300px;
   display: block;
-
-  }
-
-  #search-section,
-  #button-section {
+}
+#search-section, #button-section {
   float: right;
   margin-top: 20px;
-    position: absolute;
-    right: 150px;       
-  }
+  position: absolute;
+  right: 150px;       
+}
 #searchBtn {
   background-color:rgb(0, 41, 224);
 }
-
 body {
   background-color: gray;
 }
-
 h1 {
   font-style: italic; 
 }
-
-  h4 {
-    font-weight: bolder;
-    text-shadow:  0 1px 0 #ccc,
+h4 {
+  font-weight: bolder;
+  text-shadow:
+    0 1px 0 #ccc,
     0 2px 0 #c9c9c9,
     0 3px 0 #bbb,
     0 4px 0 #b9b9b9,
@@ -299,12 +273,11 @@ h1 {
     0 5px 10px rgba(0,0,0,.25),
     0 10px 10px rgba(0,0,0,.2),
     0 20px 20px rgba(0,0,0,.15);
-  }
-
-  h3 {
-    font-weight: bolder;
-   
-    text-shadow:  0 1px 0 #ccc,
+}
+h3 {
+  font-weight: bolder;
+  text-shadow:
+    0 1px 0 #ccc,
     0 2px 0 #c9c9c9,
     0 3px 0 #bbb,
     0 4px 0 #b9b9b9,
@@ -316,10 +289,10 @@ h1 {
     0 5px 10px rgba(0,0,0,.25),
     0 10px 10px rgba(0,0,0,.2),
     0 20px 20px rgba(0,0,0,.15);
-  }
-  h5 {
-    
-    text-shadow:  0 1px 0 #ccc,
+}
+h5 {
+  text-shadow:
+    0 1px 0 #ccc,
     0 2px 0 #c9c9c9,
     0 3px 0 #bbb,
     0 4px 0 #b9b9b9,
@@ -331,25 +304,18 @@ h1 {
     0 5px 10px rgba(0,0,0,.25),
     0 10px 10px rgba(0,0,0,.2),
     0 20px 20px rgba(0,0,0,.15);
+}
+@media screen and (max-width: 1300px) {
+  .navbar {
+    max-width: 100%;
   }
-
- 
-  @media screen and (max-width: 1300px) {
-   .navbar {
-     max-width: 100%;
-     
-   }
-  
- 
   .container {
     display: flex;
     flex-wrap: wrap;
   }
-
+}
+@media screen and (max-width: 850px) {
+  #search-section, #button-section {
+    margin-top: 60px;
   }
-  
-  @media screen and (max-width: 850px) {
-    #search-section, #button-section { 
-      margin-top: 60px;
-     }
-  }
+}

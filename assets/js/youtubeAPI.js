@@ -16,7 +16,7 @@ $(document).ready(function () {
 
             data.items.forEach(item => {
                 video = `
-                <iframe width="300" height="275" src="http://www.youtube.com/embed/${item.id.videoId}" frameborder= "0" allowfullscreen></iframe>
+                <iframe width="300" height="275" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder= "0" allowfullscreen></iframe>
                 `
 
                 $("#videos").append(video);

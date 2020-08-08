@@ -64,7 +64,6 @@ function addAllNba() {
         $.ajax(settings).then(function (response) {
             //console.log(response);
 
-
             for (let i = 0; i < 100; i++) {
                 var currentFirstName = response.data[i].first_name;
                 var currentLastName = response.data[i].last_name;

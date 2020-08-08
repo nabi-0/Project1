@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- links for styling and for foundation, as well as ajax from cloudflare. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+        integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#contact" id="info"> About Us</a>
+        <div class="dropdown">
+            <button class="dropbtn"><a> Select A Sport </a>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <ul id="sportDropdown" class="dropdown-content no-bullet">
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="NBA"><a href="nba.html">NBA</a></li>
+                <li id="active"><a href="mlb.html">MLB current players</a></li>
+                <li id="inactive"><a href="mlbretire.html">MLB retired players</a></li>
+            </ul>
+        </div>
+        <section id="search-section">
+            <div id="the-basics">
+                <input class="typeahead form-controler" type="text" id="searchBar" placeholder="Enter player name">
+        </section>
+        <section id="button-section">
+            <button id="searchBtn" class="button"><i class="fa fa-fw fa-search"></i>Search</button>
+        </section>
+        <div class="header">
+            <header>
+                <p>Team Player</p>
+            </header>
+        </div>
+    </div>
+
+</body>
+
+</html>

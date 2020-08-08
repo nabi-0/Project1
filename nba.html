@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- links for styling and for foundation, as well as ajax from cloudflare. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NBA</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+        integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+
+    <div class="navbar">
+        <a href="#contact" id="info"> About Us</a>
+        <div class="dropdown">
+            <button class="dropbtn"><a> Select A Sport </a>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <ul id="sportDropdown" class="dropdown-content no-bullet">
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="NBA"><a href="nba.html">NBA</a></li>
+                <li id="active"><a href="mlb.html">MLB current players</a></li>
+                <li id="inactive"><a href="mlbretire.html">MLB retired players</a></li>
+            </ul>
+        </div>
+        <form id="form">
+            <section id="search-section">
+                <div id="the-basics">
+                    <input class="typeahead form-controler" type="text" id="searchBar" placeholder="Enter player name">
+            </section>
+            <section id="button-section">
+                <button id="searchBtn" class="button"><i class="fa fa-fw fa-search"></i>Search</button>
+            </section>
+        </form>
+
+        <div class="header">
+            <header>
+                <p>Team Player</p>
+            </header>
+        </div>
+    </div>
+
+    <div class="info-player">
+        <!-- <aside> -->
+        <div id="playerInfo">
+            <h3>Player Info:</h3>
+
+            <br>
+            <div id="player">
+
+            </div>
+            <br>
+            <div id="team">
+
+            </div>
+            <br>
+            <div id="position">
+
+            </div>
+            <!-- <img class="image" id="imgUrl" src="" alt="" width="200px" height="200px"> -->
+        </div>
+        <!-- </aside> -->
+    </div>
+
+    <div class="logo">
+        <h3>Team logo</h3>
+        <img class="image" id="imgUrl" src="" alt="" width="300px" height="300px">
+    </div>
+
+    <div class="container">
+        <!-- <main> -->
+        <div id="athlete-view">
+            <h3>Top Plays</h3>
+
+            <div id="videos">
+
+            </div>
+        </div>
+        <!-- </main> -->
+    </div>
+
+    <div class="footer">
+        <div class="contact" id="contact">
+            <h5>Designed by: Natalia Arias, Journey Cruz, Joseph Arocha</h5>
+            <br>
+            <p>05/2020</p>
+            <br>
+            <p>Contact Us</p>
+            <p>Email :</p>
+            <p>journey.cruz@gmail.com</p>
+            <p>hozerpffp2009@gmail.com</p>
+            <p>arias.natalia1303@gmail.com</p>
+        </div>
+    </div>
+
+</body>
+
+<script async defer src="https://ajax.googleapis.com/ajax.libs.jquery/3.4.1/jquery.min.js"></script>
+<script src="./data.js"></script>
+<script src="./assets/js/nba.js"></script>
+<script src="assets/js/youtubeAPI.js"></script>
+
+</html>
